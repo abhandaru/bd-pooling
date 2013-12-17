@@ -1,0 +1,18 @@
+>> Running simulator for all traces ...
+.. Baseline traces ...
+TRACE                LENGTH                USED            UTIL            HIT%
+bisort.pool          6456KB                20KB          31.25%        99.7388%
+bisort               6424KB                32KB             50%        99.5821%
+llu.pool             35639KB          50.2188KB        78.4668%        99.8829%
+llu                  37762KB               64KB            100%          99.83%
+sort.pool            7583KB           6.40625KB        10.0098%        99.9198%
+sort                 7582KB           7.84375KB        12.2559%        99.9018%
+.. Base-Delta traces ... 
+TRACE                LENGTH                USED            UTIL            HIT%
+bisort.pool          6456KB            17.625KB        27.5391%        99.7388%
+bisort               6424KB           27.9531KB        43.6768%        99.5821%
+llu.pool             35639KB          17.7031KB        27.6611%        99.8829%
+llu                  37762KB          63.0156KB        98.4619%        99.7965%
+sort.pool            7583KB           3.46875KB        5.41992%        99.9198%
+sort                 7582KB           7.46875KB        11.6699%        99.9018%
+.. Saving to CSV file ... Done!
