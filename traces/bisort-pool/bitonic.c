@@ -343,7 +343,7 @@ int main(int argc, char **argv) {
   int n;
 
   // init the tracer
-  trace_init(&trace, "../outputs/test.bisort.pool.trace");
+  trace_init(&trace, "../outputs/bisort.pool.trace");
 
   // parse arguments
   n = dealwithargs(argc,argv);
