@@ -3,6 +3,18 @@
 This is a research project for CMU 18-740.
 
 
+### Folders
+
+Here is a brief overview of the project layout.
+
+- `baseline/` - Source and driver for a standard LRU cache simulator (no compression).
+- `base-delta/` - Source and driver for an LRU Base-Delta compression cache simulator.
+- `lib/` - Source files and headers share by simulators.
+- `traces/` - Holds the source for benchmark tests and an `outputs/` folder for trace files.
+- `data/` - Contains a driver for batching trace simulation and reporting results.
+- `documents/` - Contains spreadsheets, graphs, LaTeX source files, and reports.
+
+
 ### Config
 
 You can alter various cache paramters in the `lib/config.h` file. If you modify this file, you will have to `make clean` and rebuild each simulator.
