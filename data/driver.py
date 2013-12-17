@@ -8,7 +8,7 @@ import data
 # constants
 DIR_TRACES = '../traces/outputs'
 DIR_BASE = '../baseline'
-DIR_BDI = '../bdi-algo'
+DIR_BDI = '../base-delta'
 EXT_BASE = 'trace'
 EXT_POOL = 'pool.trace'
 EXE_DRIVER = 'driver'
