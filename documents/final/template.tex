@@ -190,7 +190,7 @@ As in prior work B+$\Delta$ offers some performance gains here. Standalone split
 
 B+$\Delta$ with splitting and pooling again outperforms considerably by about \textbf{12\% over the baseline}. As the cache capacity approaches the size of the working memory set, the gains become smaller. This is because the other configurations become less constrained for space.
 
-On the right side of Figure 4, the cache capacities are larger than working set. Because all configurations can handle the data footprint, we see no relative gains of on over another. Performance distinctions become much clearer as you place the system under more pressure.
+On the right side of Figure 4, the cache capacities are larger than working set. Because all configurations can handle the data footprint, we see no relative gains of one over another. Performance distinctions become much clearer as you place the system under more pressure.
 
 \begin{figure}
   \centering
@@ -208,7 +208,7 @@ On the right side of Figure 4, the cache capacities are larger than working set.
 \section{Conclusions}
 This paper presents a strong case for further exploration of using B+$\Delta$ compression techniques in tandem with data splitting and memory pooling. We describe how using splitting and pooling principles we can expose large, contiguous regions of memory with high \textit{value}-locality. That is, stretches with low dynamic range that B+$\Delta$ compression can leverage with higher probability.
 
-We show experimentally that programs restructured in this manner yield smaller block types within B+$\Delta$ encoding, and substantially high compression ratios over the baseline cache with no B+$\Delta$ compression or memory pooling and splitting.
+We show experimentally that programs restructured in this manner yield smaller block types within B+$\Delta$ encoding, and substantially higher compression ratios over the baseline cache with no B+$\Delta$ compression or memory pooling and splitting.
 
  Next, we discuss the shape of the data, identifying the dichotomy in cache behavior when the working memory set is large or smaller than the cache capacity. In general, the advantages of B+$\Delta$ with splitting and pooling become more apparent as the cache space constricts.
 
