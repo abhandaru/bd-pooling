@@ -8,8 +8,7 @@
 \begin{document}
 
 \title{Enhanced Base-Delta Compression with Data Splitting and Memory Pooling}
-\author{Aditya Bhandaru (\href{mailto:akbhanda@andrew.cmu.edu}{akbhanda@andrew.cmu.edu}) Gennady Pekhimenko (\href{mailto:gpekhime@cs.cmu.edu}{akbhanda@andrew.cmu.edu}) \\
-Onur Mutlu (\href{mailto:onur@cmu.edu}{akbhanda@andrew.cmu.edu})}
+\author{Aditya Bhandaru (\href{mailto:akbhanda@andrew.cmu.edu}{akbhanda@andrew.cmu.edu})}
 \date{}
 \maketitle
 
@@ -227,6 +226,11 @@ After these steps, we can better gauge how the various overheads of automated sp
 In addition, it would be great to see how B+$\Delta$ compression with splitting and pooling interacts with non-vanilla LRU replacement policies, particularly ones that account for block compressibility. As mentioned, there this area has already received some attention (see CARP\cite{carp}). I suspect the ideas in this paper could benefit  from these studies.
 
 Finally, there are cases where splitting and memory pooling does not benefit B+$\Delta$ compression. Good examples include arrays of small datatypes (such as a string of chars), encrypted data, and even data that is already compressed. These will warrant attention in the future.
+
+
+\section{Acknowledgements}
+We thank Gennady Pekhimenko (\href{mailto:gpekhime@cs.cmu.edu}{gpekhime@cs.cmu.edu}) for the initial idea, reference materials, and continued feedback. Second, we appreciate contributions from Onur Mutlu (\href{mailto:onur@cmu.edu}{onur@cmu.edu}) in the form of course material and general guidance on conducting good research.
+
 
 \bstctlcite{bstctl:etal, bstctl:nodash, bstctl:simpurl}
 \bibliographystyle{IEEEtranS}
