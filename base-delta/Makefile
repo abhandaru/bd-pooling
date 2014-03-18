@@ -1,6 +1,6 @@
 # macros
 CC=g++
-CFLAGS=-c -Wall
+CFLAGS=-c -Wall -std=c++11 
 LDFLAGS=
 SOURCES=driver.cpp compressor.cpp tag.cpp base_delta.cpp util.cpp
 OBJECTS=$(SOURCES:.cpp=.o)

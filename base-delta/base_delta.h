@@ -4,7 +4,7 @@
 #include <iostream>
 
 #include "../lib/types.h"
-
+#include <limits.h>
 #include "util.h"
 
 #define BASE2   2

@@ -1,6 +1,6 @@
 # macros
 CC=gcc
-CFLAGS=-c -Wall
+CFLAGS=-c -Wall -std=c99
 LDFLAGS=
 SOURCES=../trace.c test.c
 OBJECTS=$(SOURCES:.c=.o)

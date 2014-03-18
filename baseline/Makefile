@@ -1,6 +1,6 @@
 # macros
 CC=g++
-CFLAGS=-c -Wall
+CFLAGS=-c -Wall -std=c++11
 LDFLAGS=
 SOURCES=../lib/math.cpp driver.cpp cache.cpp tag.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
